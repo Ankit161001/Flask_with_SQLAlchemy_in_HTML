@@ -1,0 +1,22 @@
+{% block content %}
+<table>
+	<tr>
+		<td>ID</td>
+		<td>First Name</td>
+		<td>Last Name</td>
+		<td>Email</td>
+		<td>Password</td>
+	</tr>
+	<tr>
+		{% for items in values %}
+			<td>{{items._id}}</td>
+			<td>{{items.first_name}}</td>
+			<td>{{items.last_name}}</td>
+			<td>{{items.email}}</td>
+			<td>{{items.password}}</td>
+		{% endfor %}
+	</tr>
+</table>
+	
+
+{% endblock %}
